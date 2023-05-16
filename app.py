@@ -56,5 +56,5 @@ if __name__ == "__main__":
     thread = Thread(target=handler.start)
     thread.start()
     
-    # Start the Flask app
-    app.run(port=3333)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=3333)
