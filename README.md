@@ -29,7 +29,7 @@ SLACK_APP_TOKEN=<Your Slack App-Level Token>
 ```shell
 python app.py
 ```
-The bot is now ready to receive /chatgpt commands in the specified Slack channel.
+The bot is now ready to receive /chatgpt commands in the Slack channel where you've invited the Bot.
 
 ### How It Works
 
