@@ -44,7 +44,7 @@ def command(ack, say, command):
     response_text = response['choices'][0]['message']['content']
 
     # Post the user's message and the response back to the same channel
-    say(f"*Message:* {text}\n*Response:* {response_text}")
+    say(f"*Message:* {text}\n*Response:* {response_text}\n----------------")
 
 @app.route('/')
 def hello_world():
