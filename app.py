@@ -13,7 +13,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-
 api_key = os.environ.get('OPENAI_API_KEY')
 SLACK_BOT_TOKEN = os.environ.get('SLACK_BOT_TOKEN')
 SLACK_APP_TOKEN = os.environ.get('SLACK_APP_TOKEN')
@@ -49,12 +48,6 @@ def command(ack, say, command):
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
-
-if __name__ == "__main__":
-    # Start the socket mode handler
-    handler = SocketModeHandler(slack_app, SLACK_APP_TOKEN)
-    thread = Thread(target=handler.start)
-    thread.start()
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=3333)
